@@ -1,6 +1,6 @@
 version: "3"
 services:
-    python:
+    django-dev:
         image: python:3.8
         volumes:
             - ./django/app:/app
