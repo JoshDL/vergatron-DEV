@@ -1,0 +1,11 @@
+version: "3"
+
+services: 
+    django:
+        build: ./django
+        container_name: django
+        restart: always
+        environment: 
+            - APP_NAME=Intranet
+        ports:
+            - 8000:8000

@@ -1,0 +1,11 @@
+version: "3"
+services:
+    python:
+        image: python:3.8
+        volumes:
+            - ./app:/app
+        ports:
+            - 8000:8000
+        command: sleep infinity
+        # command: cd app && pip install -r "requirements.txt" && python manage.py runserver 0.0.0.0:8000
+        # para acceder y escribir el codigo manualmente: docker-compose exec python bash
