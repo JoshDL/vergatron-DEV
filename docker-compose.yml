@@ -3,7 +3,7 @@ services:
     python:
         image: python:3.8
         volumes:
-            - ./app:/app
+            - ./django/app:/app
         ports:
             - 8000:8000
         command: sleep infinity
